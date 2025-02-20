@@ -1,0 +1,127 @@
+/* Style global de la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Formulaire de création de tâche */
+form[action*="create"] {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form[action*="create"] div {
+    margin-bottom: 15px;
+}
+
+form[action*="create"] label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form[action*="create"] input[type="text"],
+form[action*="create"] input[type="date"],
+form[action*="create"] textarea,
+form[action*="create"] select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form[action*="create"] button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form[action*="create"] button:hover {
+    background: #0056b3;
+}
+
+/* Tableaux */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table thead {
+    background: #007bff;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Champs de saisie dans le tableau */
+table input[type="text"],
+table input[type="date"],
+table select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boutons dans le tableau */
+table button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+table button:hover {
+    background: #218838;
+}
+
+/* Bouton Supprimer spécifique */
+.delete-btn {
+    background: #dc3545;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Style des icônes dans les boutons */
+table button img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+/* Conteneurs pour les boutons d'action */
+.user-edit, .user-supp {
+    display: inline-block;
+    margin-right: 5px;
+}
